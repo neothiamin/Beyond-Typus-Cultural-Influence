@@ -355,11 +355,11 @@ merge_rhomaio = {
 	every_country = {
 		limit = {
 			OR = {
-				has_accepted_culture = greek
-				has_accepted_culture = pontic_greek
-				has_accepted_culture = cappadocian
-				has_accepted_culture = cypriot
-				has_accepted_culture = tourkiki
+				accepted_culture = greek
+				accepted_culture = pontic_greek
+				accepted_culture = cappadocian
+				accepted_culture = cypriot
+				accepted_culture = tourkiki
 			}
 		}
 		remove_accepted_culture = greek
