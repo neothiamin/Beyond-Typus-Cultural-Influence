@@ -5498,9 +5498,9 @@ kipchak = {
 	}
 	krymchak = {	#Or Karaites, hard to say, basivally a general term for the ethnic Turkish/Jewish/Greek/Khazar peoples of Crimea
 		dynasty_names = {
-			Altan Asanin Bekmambet Ziyaeddin Sarigl Bektre Celebicihan  Cobanzade Dgci Gaspirali Giraybay Hablemitoglu Hilmi
+			Altan Asanin Bekmambet Ziyaeddin Sarigöl Bektöre Celebicihan Cobanzade Dögci Gaspirali Giraybay Hablemitoglu Hilmi
 			Inalcik Ipci Kirimal Seydahmet Ihsan Kubay Qirimoglu Mamut Mansiz Mehdi Neyazi Ortayli Semizade Soysal Zihni Tarhan
-			Fazil Uralgiray Kosay Agah Mangitli Tgay Kemal
+			Fazil Uralgiray Kosay Agah Mangitli Tögay Kemal
 		}
 		male_names = {
 			Alp Arslan Adil Amin Bahadir Devlet Fetih Ghazi Haji Halim Haspulad Hayder Inayet Islam Janay Janibek
