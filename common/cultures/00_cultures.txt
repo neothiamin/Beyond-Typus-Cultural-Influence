@@ -9524,7 +9524,7 @@ mongolic = {
 			Hoelun Tamülün Sorghaghtani Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene 
 		}
 	}
-	khitan = (
+	khitan = {
 	}
 }
 
