@@ -405,7 +405,7 @@ velgoi_culture_region = {
 		area = lower_rhineland_area	
 		area = wallonia_area	
 		area = luxembourg_area	
-		area = west_burgundy	
+		area = west_burgundy_area
 		province_id = 96			
 		province_id = 3060	
 		province_id = 2975	
@@ -536,7 +536,7 @@ voreioanatolikosgermanikos_culture_region = {
 		}	
 	}	
 }		
-kefalés_culture_region = {	
+kefales_culture_region = {	
 	OR = {	
 		AND = {	
 			region = baltic_region	
@@ -550,7 +550,7 @@ kefalés_culture_region = {
 		area = polotsk_area	
 	}	
 }	
-savramáta_culture_region = {	
+savramata_culture_region = {	
 	OR = {	
 		AND = {	
 			region = ruthenia_region	
@@ -566,7 +566,7 @@ savramáta_culture_region = {
 		}	
 	}		
 }	
-krios_savramáta_culture_region = {	
+krios_savramata_culture_region = {	
 	OR = {	
 		AND = {	
 			region = russia_region	

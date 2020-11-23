@@ -42,10 +42,15 @@ country_decisions = {
 			any_owned_province = {
 				has_province_modifier = byz_anatolian_restoration
 			}
-			AND = {
-				rhomaio_unification_region = {	
-   					culture_group = byzantine	
-    					type = all	
+			all_province = {
+				OR = {
+					AND = {
+						rhomaio_unification_region = yes
+						culture_group = byzantine
+					}
+					NOT = {
+						rhomaio_unification_region = yes
+					}
 				}
 			}	
 		}
