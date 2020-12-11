@@ -9,7 +9,8 @@ namespace = cultural_influence_greek
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }			
+		owner = { culture_group = byzantine }	
+		agaio_culture_region = yes			
 		NOT = { culture = greek }
 		NOT = { culture = tourkiki }		
 		NOT = { has_global_flag = rhomaio_formed}	
@@ -33,7 +34,6 @@ namespace = cultural_influence_greek
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		agaio_culture_region = yes	
 	}	
 	mean_time_to_happen = {	
 		#Template Settled MTTH	
@@ -142,7 +142,8 @@ namespace = cultural_influence_greek
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		illyrion_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -168,7 +169,6 @@ namespace = cultural_influence_greek
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}		
-		illyrion_culture_region = yes	
 	}	
 	mean_time_to_happen = {	
 		#Template Settled MTTH	
@@ -280,7 +280,8 @@ namespace = cultural_influence_greek
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		graiko_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -306,7 +307,6 @@ namespace = cultural_influence_greek
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}		
-		graiko_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -418,7 +418,8 @@ namespace = cultural_influence_greek
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }		
+		owner = { culture_group = byzantine }	
+		pontic_greek_culture_region = yes			
 		NOT = { has_global_flag = rhomaio_formed}	
 		NOT = { culture = pontic_greek }
 		NOT = { culture = tourkiki }		
@@ -442,7 +443,6 @@ namespace = cultural_influence_greek
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		pontic_greek_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -554,7 +554,8 @@ province_event = { #Irish reclamation event except for Cappadocian Greeks
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }		
+		owner = { culture_group = byzantine }	
+		cappadocian_culture_region = yes		
 		NOT = { has_global_flag = rhomaio_formed}	
 		NOT = { culture = cappadocian }	
 		NOT = { culture = tourkiki }		
@@ -578,7 +579,6 @@ province_event = { #Irish reclamation event except for Cappadocian Greeks
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		cappadocian_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -690,7 +690,8 @@ province_event = { #Irish reclamation event except for Assimilation of Armenians
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		nkreko_armenio_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -717,7 +718,6 @@ province_event = { #Irish reclamation event except for Assimilation of Armenians
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}		
-		nkreko_armenio_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -835,7 +835,8 @@ province_event = { #Irish reclamation event except for Greeks in Alexandria and 
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		alexandrian_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -844,6 +845,7 @@ province_event = { #Irish reclamation event except for Greeks in Alexandria and 
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
 			owner = { ai = yes }
+			culture = armenian
 		}
 		OR = { #Intent check for beings capable of signaling intent (Requiring this allows lower MTTHs and hopefully more directed efforts)
 			AND = { #AIs are dumb (With a lot of work it would be possible to use a system of decisions and flags to signal intent here)
@@ -860,8 +862,7 @@ province_event = { #Irish reclamation event except for Greeks in Alexandria and 
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		alexandrian_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -974,7 +975,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Arabia
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		aravikos_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -999,8 +1001,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Arabia
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		aravikos_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -1112,7 +1113,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Irelan
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		hibernian_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -1137,8 +1139,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Irelan
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		hibernian_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -1250,7 +1251,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Britai
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		albian_culture_region = yes			
 		owner = { has_country_modifier = hellenic_settlements }	
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
@@ -1277,7 +1279,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Britai
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}		
-		albian_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -1389,7 +1390,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Scandi
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		varangian_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -1415,7 +1417,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Scandi
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		varangian_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -1527,7 +1528,8 @@ province_event = { #Irish reclamation event except it's greek conquest of the Ho
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		avissinos_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -1552,8 +1554,7 @@ province_event = { #Irish reclamation event except it's greek conquest of the Ho
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}		
-		avissinos_culture_region = yes	
+		}			
 	}	
 
 	mean_time_to_happen = {	
@@ -1665,7 +1666,8 @@ province_event = { #Irish reclamation event except it's greek conquest of the le
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		antiocheia_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -1691,7 +1693,6 @@ province_event = { #Irish reclamation event except it's greek conquest of the le
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		antiocheia_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -1804,7 +1805,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Persia
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		persic_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -1829,8 +1831,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Persia
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		persic_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -2073,7 +2074,8 @@ province_event = { #Irish reclamation event except for Rhomaio
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		rhomaio_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -2099,8 +2101,7 @@ province_event = { #Irish reclamation event except for Rhomaio
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}		
-		rhomaio_culture_region = yes	
+		}			
 	}	
 	mean_time_to_happen = {	
 		#Template Settled MTTH	
@@ -2211,7 +2212,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Libya
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		kirenike_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -2236,8 +2238,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Libya
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}		
-		kirenike_culture_region = yes	
+		}			
 	}	
 
 	mean_time_to_happen = {	
@@ -2349,7 +2350,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Tunis
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		karchidoniac_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -2374,8 +2376,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Tunis
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}		
-		karchidoniac_culture_region = yes	
+		}			
 	}	
 
 	mean_time_to_happen = {	
@@ -2487,7 +2488,8 @@ province_event = { #Irish reclamation event except it's greek conquest of the Ma
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		mavritanias_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -2512,8 +2514,7 @@ province_event = { #Irish reclamation event except it's greek conquest of the Ma
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		mavritanias_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -2625,7 +2626,8 @@ province_event = { #Irish reclamation event except it's greek conquest of steppe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		skythis_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -2650,8 +2652,7 @@ province_event = { #Irish reclamation event except it's greek conquest of steppe
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		skythis_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -2763,7 +2764,8 @@ province_event = { #Irish reclamation event except it's greek conquest of east p
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		vaktrianos_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -2788,8 +2790,7 @@ province_event = { #Irish reclamation event except it's greek conquest of east p
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		vaktrianos_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -2901,7 +2902,8 @@ province_event = { #Irish reclamation event except it's greek conquest of north-
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		indiki_koilada_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -2926,8 +2928,7 @@ province_event = { #Irish reclamation event except it's greek conquest of north-
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}		
-		indiki_koilada_culture_region = yes	
+		}			
 	}	
 
 	mean_time_to_happen = {	
@@ -3040,7 +3041,8 @@ province_event = { #Irish reclamation event except it's greek conquest of the we
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		massalian_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -3065,8 +3067,7 @@ province_event = { #Irish reclamation event except it's greek conquest of the we
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		massalian_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -3179,7 +3180,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		italiote_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -3204,8 +3206,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		italiote_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -3317,7 +3318,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		septimanikion_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -3342,8 +3344,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		septimanikion_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -3455,7 +3456,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Southe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		karpessosion_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -3480,8 +3482,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Southe
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		karpessosion_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -3593,7 +3594,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Southe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		galatian_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -3618,8 +3620,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Southe
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		galatian_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -3732,7 +3733,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		velgoi_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -3757,8 +3759,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		velgoi_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -3871,7 +3872,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Pannon
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		pannonion_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -3896,8 +3898,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Pannon
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		pannonion_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -4009,7 +4010,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Dacia.
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		dacion_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -4035,8 +4037,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Dacia.
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}		
-		dacion_culture_region = yes	
+		}			
 	}	
 
 	mean_time_to_happen = {	
@@ -4148,7 +4149,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Southw
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		notiodytiki_germanikos_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -4173,8 +4175,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Southw
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		notiodytiki_germanikos_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -4286,8 +4287,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Northw
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
-		owner = { has_country_modifier = hellenic_settlements }	
+		owner = { culture_group = byzantine }
+		voreiodytiki_germanikos_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -4312,8 +4313,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Northw
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		voreiodytiki_germanikos_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -4425,7 +4425,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Southe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		notioanatolikosgermanikos_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -4450,8 +4451,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Southe
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		notioanatolikosgermanikos_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -4563,7 +4563,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		voreioanatolikosgermanikos_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -4589,7 +4590,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		voreioanatolikosgermanikos_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -4701,7 +4701,8 @@ province_event = { #Irish reclamation event except it's greek conquest of the Ba
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		kefales_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -4726,8 +4727,7 @@ province_event = { #Irish reclamation event except it's greek conquest of the Ba
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		kefales_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -4839,7 +4839,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Ruthen
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		savramata_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -4864,8 +4865,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Ruthen
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		savramata_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -4977,7 +4977,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Russia
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		krios_savramata_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -5002,8 +5003,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Russia
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		krios_savramata_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -5115,7 +5115,8 @@ province_event = { #Irish reclamation event except it's greek conquest of the Ur
 		
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		vounos_savramata_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -5140,8 +5141,7 @@ province_event = { #Irish reclamation event except it's greek conquest of the Ur
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		vounos_savramata_culture_region = yes	
+		}		
 	}
 	mean_time_to_happen = {
 		#Template Settled MTTH
@@ -5253,7 +5253,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Siberi
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		makria_savramata_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -5278,8 +5279,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Siberi
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		makria_savramata_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -5392,7 +5392,8 @@ province_event = { #Irish reclamation event except it's greek conquest of South 
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		notia_aethiopas_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -5417,8 +5418,7 @@ province_event = { #Irish reclamation event except it's greek conquest of South 
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		notia_aethiopas_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -5531,7 +5531,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Centra
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		tavrika_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -5556,8 +5557,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Centra
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}		
-		tavrika_culture_region = yes	
+		}			
 	}	
 
 	mean_time_to_happen = {	
@@ -5669,7 +5669,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Mongol
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		sogdanika_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -5694,8 +5695,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Mongol
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		sogdanika_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -5807,7 +5807,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Japan
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		helika_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -5833,7 +5834,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Japan
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		helika_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -5945,7 +5945,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Korea
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		kavlika_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -5970,8 +5971,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Korea
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		kavlika_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -6083,7 +6083,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Tibet
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		thivetiani_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -6109,7 +6110,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Tibet
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		thivetiani_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -6221,7 +6221,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		seresike_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -6246,8 +6247,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Northe
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		seresike_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -6359,7 +6359,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Southe
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		sinaeka_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -6385,7 +6386,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Southe
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		sinaeka_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -6497,7 +6497,8 @@ province_event = { #Irish reclamation event except it's greek conquest of North 
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		anatoliarianka_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -6522,8 +6523,7 @@ province_event = { #Irish reclamation event except it's greek conquest of North 
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		anatoliarianka_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -6635,7 +6635,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Centra
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		indiki_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -6661,7 +6662,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Centra
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}		
-		indiki_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -6773,7 +6773,8 @@ province_event = { #Irish reclamation event except it's greek conquest of South 
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		koniaka_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -6798,8 +6799,7 @@ province_event = { #Irish reclamation event except it's greek conquest of South 
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		koniaka_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -6911,7 +6911,8 @@ province_event = { #Irish reclamation event except it's greek conquest of South 
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		taprovanika_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -6936,8 +6937,7 @@ province_event = { #Irish reclamation event except it's greek conquest of South 
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		taprovanika_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -7049,7 +7049,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Burma
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		palivothrika_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -7075,7 +7076,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Burma
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		palivothrika_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -7187,7 +7187,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Indoch
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		megali_sinaeka_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -7213,7 +7214,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Indoch
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		megali_sinaeka_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -7325,7 +7325,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Indone
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		anatolianesika_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -7350,8 +7351,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Indone
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		anatolianesika_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -7463,7 +7463,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Polyne
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		polinesika_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -7489,7 +7490,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Polyne
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}		
-		polinesika_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -7601,7 +7601,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Saheli
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		erimos_aethiopas_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -7626,8 +7627,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Saheli
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		erimos_aethiopas_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -7739,7 +7739,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Nigeri
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		nkini_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -7764,8 +7765,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Nigeri
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		nkini_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -7877,7 +7877,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Coasta
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		akti_aethiopas_culture_region = yes			
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -7903,7 +7904,6 @@ province_event = { #Irish reclamation event except it's greek conquest of Coasta
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
 		}	
-		akti_aethiopas_culture_region = yes	
 	}	
 
 	mean_time_to_happen = {	
@@ -8015,7 +8015,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Centra
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		esoterikos_aethiopas_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -8040,8 +8041,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Centra
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		esoterikos_aethiopas_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -8153,7 +8153,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Coasta
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		souachiliaktikos_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -8178,8 +8179,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Coasta
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		souachiliaktikos_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -8292,7 +8292,8 @@ province_event = { #Irish reclamation event except it's greek conquest of Wester
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
+		olissiponion_culture_region = yes		
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -8317,8 +8318,7 @@ province_event = { #Irish reclamation event except it's greek conquest of Wester
 			owner = { has_country_modifier = hellenic_settlements }
 			owner = { ai = no }
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
-		}	
-		olissiponion_culture_region = yes	
+		}		
 	}	
 
 	mean_time_to_happen = {	
@@ -8431,7 +8431,7 @@ province_event = { #Irish reclamation event except for Assimilation of Turks
 
 	trigger = {	
 		#Template Settled Triggers	
-		owner = { culture_group = greek }
+		owner = { culture_group = byzantine }
 		OR = {
 			owner = { has_country_modifier = hellenic_settlements }	
 			owner = { overlord = { has_country_modifier = hellenic_settlements } }
@@ -8441,6 +8441,7 @@ province_event = { #Irish reclamation event except for Assimilation of Turks
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
 			owner = { ai = yes }
+			culture = turkish
 		}
 		OR = { #Intent check for beings capable of signaling intent (Requiring this allows lower MTTHs and hopefully more directed efforts)
 			AND = { #AIs are dumb (With a lot of work it would be possible to use a system of decisions and flags to signal intent here)
