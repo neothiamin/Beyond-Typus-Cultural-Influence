@@ -38,6 +38,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			culture_group = germanic
+			has_global_flag = hochdeutsch_created_flag
+			any_owned_province = { hochdeutsch_sudeten_cultures = yes }
 			OR = {
 				primary_culture = hochdeutsch
 				accepted_culture = hochdeutsch
@@ -47,7 +49,7 @@ country_decisions = {
 		provinces_to_highlight = {
 			hochdeutsch_sudeten_region = yes
 			NOT = { owned_by = ROOT }
-			hochdeutsch_sudeten_cultures = yes
+			hochdeutsch_sudeten_cultures = no
 		}
 
 		allow = {
@@ -55,7 +57,7 @@ country_decisions = {
 				tooltip = bohemia_germanicized_trigger_tt
 				europe = {
 					OR = {
-						hochdeutsch_sudeten_region = yes
+						hochdeutsch_sudeten_region = no
 						AND = {
 							owned_by = ROOT
 							hochdeutsch_sudeten_cultures = yes
@@ -78,6 +80,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			culture_group = germanic
+			has_global_flag = plattduutsch_created_flag
+			any_owned_province = { plattduutsch_schlesisch_cultures = yes }
 			OR = {
 				primary_culture = plattduutsch
 				accepted_culture = plattduutsch
@@ -87,7 +91,7 @@ country_decisions = {
 		provinces_to_highlight = {
 			plattduutsch_schlesisch_region = yes
 			NOT = { owned_by = ROOT }
-			plattduutsch_schlesisch_cultures = yes
+			plattduutsch_schlesisch_cultures = no
 		}
 
 		allow = {
@@ -118,6 +122,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			culture_group = germanic
+			has_global_flag = plattduutsch_created_flag
+			any_owned_province = { plattduutsch_preussisch_cultures = yes }
 			OR = {
 				primary_culture = plattduutsch
 				accepted_culture = plattduutsch
@@ -127,7 +133,7 @@ country_decisions = {
 		provinces_to_highlight = {
 			plattduutsch_preussisch_region = yes
 			NOT = { owned_by = ROOT }
-			plattduutsch_preussisch_cultures = yes
+			plattduutsch_preussisch_cultures = no
 		}
 
 		allow = {
