@@ -190,7 +190,7 @@ leader_names = {
 }
 
 army_names = {
-	"Royal Army" "Army of England" Army of Scotland" "Army of Ireland" "Army of France" "Army of Aquitaine" "Army of Brittany" "Army of Burgundy" "Army of $PROVINCE$"
+	"Royal Army" "Army of England" "Army of Scotland" "Army of Ireland" "Army of France" "Army of Aquitaine" "Army of Brittany" "Army of Burgundy" "Army of $PROVINCE$"
 
 	"Armée royale" "Armée des Flandres" "Armée de Gascogne" "Armée de Bretagne"
 	"Armée d'Angleterre" "Armée d'Écosse" "Armée d'Irlande" "Armée de France" "Armée de $PROVINCE$"
