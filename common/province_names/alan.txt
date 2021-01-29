@@ -1,0 +1,7 @@
+#Argacyan
+#Circassia
+2197 = "Kæsær" #Ossetian
+2201 = "Iryston" #Kinda like Iranistan, or alternatively only "Ir", both based on technically 1444 start appropriate grounds, "Alania" was still an english name
+3262 = "Chæræse" #Ossetian
+#Crimea
+285 = "Ardabda"
