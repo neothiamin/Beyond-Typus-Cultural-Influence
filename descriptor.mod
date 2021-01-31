@@ -1,10 +1,11 @@
-version="0.7.3.0"
+version="0.7.4.0"
 tags={
 	"Events"
 	"Gameplay"
 }
 dependencies={
 	"Beyond Typus"
+	"-BT Addon: Byzantine Resurgence"
 }
 picture="Thumbnail.png"
 name="Culturally Forked"
