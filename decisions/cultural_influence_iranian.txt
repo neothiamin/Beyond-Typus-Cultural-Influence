@@ -59,12 +59,13 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			463 = {
+				set_province_flag = maghas_restored_flag
 				change_province_name = "Iryston" #Iryston is literally land of the Ir (Alania is a calque), this is now their new home, old Iryston is now called the Darian pass, Ma'as feels more appropriate to be called Alania in this timeline with a resurgent Alania
 				rename_capital = "Ma'as"
 				change_culture = alan
 				change_religion = ROOT
 				add_base_tax = 4
-				add_base_prodution = 3
+				add_base_production = 3
 				add_base_manpower = 2
 				move_capital_effect = yes
 				add_center_of_trade_level = 1

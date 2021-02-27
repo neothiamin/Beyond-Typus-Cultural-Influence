@@ -1,4 +1,40 @@
-﻿Version 0.7.4.0
+﻿Version 0.7.4.3
+ADDITIONS
+ - Added more Mongolian province names
+CHANGES
+ - Restored Kara Del to Mongolian
+ - Added Western Yugur to the map
+ - Added Eastern Yugur, temporarily as Mongol until a major update when they will get their own culture
+BUGS
+ - Fixed overlapping Rivieradeutsch and Frankisch
+ - Fixed Rijeka and Sieradz missing from the Germanic settled areas
+ - Fixed some Jurchen nomads being non-nomadic
+
+Version 0.7.4.2
+CHANGES
+ - Germanic standardizations now convert all appropriate tags to the new standard
+BUGS
+ - Fixed restore Ma'as being repeatable
+
+Version 0.7.4.1
+ADDITIONS
+ - Localized foreign merchant colony modifier
+ - Added generic merchant colony stuff to the history files
+CHANGES
+ - Permitted Eastphalian cultures to form Hannover
+ - Central Franconian now counts for Westphalia
+ - Changed Alanian ADJ from 'Alans' to 'Alanian'
+BUGS
+ - Fixed Aremnian assimilation culture region ID
+ - Prevented generic merchant colonies firing on same-culture provinces
+ - Fixed generic merchant colonies not setting the vars correctly
+ - Fixed typo in Restore Ma'as
+ - Fixed invalid Tourkiki event triggers (no error here, just spits to the error log)
+ - Fixed scope ID in Latin German genocide event
+ - Fixed unclosed scope in Latin German genocide event
+ - Fixed a number of invalid Latin culture regions
+
+Version 0.7.4.0
 ADDITIONS
  - Added Alan and Qazar province names
  - Added decision to restore Ma'as for Alania
