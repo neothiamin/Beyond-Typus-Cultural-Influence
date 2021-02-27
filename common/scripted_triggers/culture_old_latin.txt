@@ -921,7 +921,7 @@ roman_west_sahara_region = {
 		area = dendi_area
 		area = niger_bend_area
 		area = baghena_area
-		area = area = upper_volta_area
+		area = upper_volta_area
 		area = atacora_oueme_area
 		area = lower_volta_area
 		area = kong_area

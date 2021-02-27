@@ -10322,6 +10322,7 @@ country_event = { #Asks player if they want to destroy the G*rmans
 				}
 				amount = 5
 			}
+		}
 	}
 	
 	option = {
@@ -10445,7 +10446,7 @@ province_event = { #Obliterate large G*rman cities
 	id = latinise_genocide.3
 	name = latinise_genocide.3.t
 	desc = latinise_genocide.3.d
-	picture = picture = WOUNDED_SOLDIERS_eventPicture
+	picture = WOUNDED_SOLDIERS_eventPicture
 	
 	trigger = {
 		tag = ROM
