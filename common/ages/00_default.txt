@@ -303,16 +303,9 @@ age_of_reformation = {
 		
 		}
 		
-		obj_unify_culture = {	
-			NOT = {
-				any_province = {
-					AND = {
-						culture = ROOT
-						NOT = { owned_by = ROOT }
-						continent = europe
-					}
-				}
-			}
+		obj_unify_culture = {
+			is_subject = no
+			has_unified_culture_group = yes
 		}
 	}	
 	
